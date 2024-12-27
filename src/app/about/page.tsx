@@ -1,4 +1,4 @@
-import { Button, Container, Flex, Text } from "@radix-ui/themes";
+import { Container, Flex, Text } from "@radix-ui/themes";
 import Link from "next/link";
 
 export default function About() {
