@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Providers from "./providers";
+// import { Theme } from "@radix-ui/themes";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const space = Space_Grotesk({
   subsets: ["latin"],
 });
 
@@ -27,9 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${space.className} dark:text-white bg-gradient-to-r from-violet200 to-pink200 dark:bg-gradient-to-b dark:from-darkMode dark:to-darkMode
+         text-gray-950 relative min-h-screen container max-w-4xl mx-auto`}
       >
-        <Theme appearance="dark">{children}</Theme>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
