@@ -1,37 +1,36 @@
-// "use client";
-// import { useState, useEffect } from "react";
-// import { useTheme } from "next-themes";
+"use client";
+import { useState, useEffect } from "react";
 
-// function ThemeSwitcher({ children }: any) {
-//   const [mounted, setMounted] = useState<boolean>(false);
-//   // const { theme, setTheme } = useTheme();
+function ThemeSwitcher({ children }: React.PropsWithChildren) {
+  const [mounted, setMounted] = useState<boolean>(false);
+  // const { theme, setTheme } = useTheme();
 
-//   useEffect(() => {
-//     setMounted(true);
-//   }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-//   // useEffect(() => {
-//   //   const testFunc = () => {
-//   //     theme === "dark"
-//   //       ? console.log("theme is dark")
-//   //       : console.log("theme is light");
-//   //   };
-//   //   testFunc();
-//   // }, [theme]);
+  // useEffect(() => {
+  //   const testFunc = () => {
+  //     theme === "dark"
+  //       ? console.log("theme is dark")
+  //       : console.log("theme is light");
+  //   };
+  //   testFunc();
+  // }, [theme]);
 
-//   if (!mounted) {
-//     return <>{children}</>;
-//   }
+  if (!mounted) {
+    return <>{children}</>;
+  }
 
-//   return (
-//     <>
-//       {/* The current theme is: {theme} */}
-//       {/* <div>
-//         <button onClick={() => setTheme("light")}>Light Mode</button>
-//         <button onClick={() => setTheme("dark")}>Dark Mode</button>
-//       </div> */}
-//     </>
-//   );
-// }
+  return (
+    <>
+      {/* The current theme is: {theme} */}
+      {/* <div>
+        <button onClick={() => setTheme("light")}>Light Mode</button>
+        <button onClick={() => setTheme("dark")}>Dark Mode</button>
+      </div> */}
+    </>
+  );
+}
 
-// export default ThemeSwitcher;
+export default ThemeSwitcher;

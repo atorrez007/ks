@@ -5,6 +5,8 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 
 import Providers from "./providers";
+import Header from "@/components/Header";
+import ThemeSwitcher from "./ThemeSwitcher";
 // import { Theme } from "@radix-ui/themes";
 
 // const geistSans = Geist({
@@ -37,7 +39,11 @@ export default function RootLayout({
         className={`${space.className} dark:text-white bg-gradient-to-r from-violet200 to-pink200 dark:bg-gradient-to-b dark:from-darkMode dark:to-darkMode
          text-gray-950 relative min-h-screen container max-w-4xl mx-auto`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <ThemeSwitcher />
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -1,4 +1,18 @@
 import { SocialType, ProjectType } from "@/types";
+
+export const links = [
+  {
+    name: "Home",
+    source: "/",
+  },
+
+  {
+    name: "Projects",
+    source: "/projects",
+  },
+  { name: "Contact", source: "/contact" },
+] as const;
+
 export const socialData: SocialType[] = [
   {
     id: 0,
