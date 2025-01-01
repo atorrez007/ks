@@ -21,7 +21,7 @@ function Header() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <div className=" p-4 border-neutral-100 items-center justify-between">
+        <div className="p-4 border-neutral-100 items-center justify-between">
           <div className="text-xl font-mono font-semibold tracking-wide">
             <Link href="/">
               <AnimatePresence>

@@ -26,7 +26,7 @@ export default function Intro() {
   return (
     <section>
       <motion.div
-        className="flex px-5 mt-12  justify-center 
+        className="flex px-5 mt-12 justify-center 
         xs:flex-col-reverse xs:justify-center xs:items-center 
         md:flex-row md:justify-between"
         initial={{ y: 25, opacity: 0 }}
