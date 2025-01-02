@@ -53,6 +53,11 @@ export default function Intro() {
           <h1 className="my-3 text-lg text-center md:text-left pr-6">
             If you have a project and would like funding please apply! 👇🏻
           </h1>
+          <div className="flex xs:justify-center md:justify-start lg:justify-center">
+            <button className="mt-6 border-2 border-black text-black dark:bg-slate-400 p-2 rounded-md hover:text-white hover:bg-slate-400 dark:hover:bg-white delay-100 dark:hover:text-black dark:border-none">
+              Get Funding
+            </button>
+          </div>
         </div>
         <div className="flex">
           <Image
